@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://www.thecolonyhotelbali.com/wp-content/uploads/2021/12/woman-walking-kelingking-beach-nusa-penida-island-bali-indonesia.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+header {
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+.logo {
+    color: rgb(51, 255, 0);
+    font-size: 36px;
+    height: 60px;
+    padding: 0 20px;
+    line-height: 60px;
+    float: left;
+}
+nav {
+    float: right;
+}
+.clearfix {
+    clear: both;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    display: block;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+}
+nav ul li a.active,
+nav ul li a:hover 
+{
+    color: #fff;
+    background-color: rgb(0, 106, 255);
+    transition: 0.5s;
+}
+@media (max-width:1200px)
+{
+    header {
+        margin: 20px;
+    }
+}
+@media (max-width:870px)
+{
+    .menu_toggle {
+        position: relative;
+        display: block;
+        margin: 20px;
+        width: 40px;
+        height: 40px;
+        background: #ccc;
+        float: right;
+        font-size: 30px;
+        text-align: center;
+        color: rgb(0, 106, 255);
+    }
+    .menu_toggle::before {
+        position: absolute;
+        content: '\f0c9';
+        font-family: FontAwesome;
+        line-height: 40px;
+        left: 0;
+        right: 0;
+    }
+    nav {
+        display: none;
+    }
+}
