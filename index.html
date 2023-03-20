@@ -11,8 +11,7 @@
 <body>
     <section class="navbar">
         <header>
-        <input type="checkbox" name="check" id="check">
-        <div class="menu_toggle active"></div>
+        <div class="menu_toggle"></div>
             <div class="logo">LOGO</div>
             <nav>
                 <ul>
@@ -26,6 +25,18 @@
             </nav>
             <div class="clearfix"></div>
         </header>
+        <script
+  src="https://code.jquery.com/jquery-3.6.4.js"
+  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('/.menu_toggle').click(function(){
+            $('.menu_toggle').toggleClass('active')
+            $('nav').toggleClass('active')
+        })
+    })
+  </script>
     </section>
 </body>
 </html>
