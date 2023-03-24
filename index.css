@@ -68,25 +68,35 @@ nav ul li a:hover
         font-size: 30px;
         text-align: center;
         color: rgb(0, 106, 255);
+       
     }
     .menu_toggle::before {
         position: absolute;
         content: '\f0c9';
         font-family: FontAwesome;
-
+   
     }
-    .menu_toggle.active:before {
-        content: 'f00d';
-        font-family: FontAwesome;
+    .menu_toggle.active::before {
+        content: '\f00d';
     }
-    nav {
+    .menu {
         display: none;
     }
-    nav.active {
+    .menu.active {
         display: block;
         width: 100%;
     }
-    nav.active ul {
-        display: block;
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        
     }
+    nav ul li {
+        flex: 1 1 450px;
+    }
+    .logo {
+        position: fixed;
+        margin-top: 10px;
+    }
+        
 }
